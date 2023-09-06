@@ -11,7 +11,7 @@ public class L2E1 {
         String hobby = input.nextLine();
 
         System.out.println( name + " picked up her pencil. She scrunched her face in concentration, tongue sticking out. " +
-                "Carefully, she outlined a dog. Tail wagging, mouth smiling. " + "\n" + name + " beamed at her work before adding a big heart. " +
+                "Carefully, she outlined a dog. Tail wagging, mouth smiling.\n" + name + " beamed at her work before adding a big heart. " +
                 hobby + " will always be her favourite thing to do." + "\n");
 
     }
