@@ -4,6 +4,7 @@ public class L2E1 {
 
 
         Scanner input = new Scanner(System.in);
+
         System.out.print("What is your name? ");
         String name = input.nextLine();
 
