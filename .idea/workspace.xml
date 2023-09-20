@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5424dea0-3563-4db3-a0a5-5c5dea4f0538" name="Changes" comment="Name and hobby story thingy">
-      <change afterPath="$PROJECT_DIR$/src/L3E1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/L3E2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/L3E3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/L4E1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/L2E1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L2E1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +59,7 @@
       <workItem from="1693407887708" duration="75000" />
       <workItem from="1694001092522" duration="8490000" />
       <workItem from="1694606533066" duration="6982000" />
+      <workItem from="1695211395518" duration="1767000" />
     </task>
     <task id="LOCAL-00001" summary="Anagrams again">
       <option name="closed" value="true" />
