@@ -1,4 +1,6 @@
 import java.util.*;
+import java.util.random.RandomGenerator;
+
 public class L5E3 {
 
     public static void main(String[] args) {
@@ -9,7 +11,7 @@ public class L5E3 {
 
         for(int count=1;  count<=10; count+=1)
         {
-            System.out.print("What is 2+5 = ");
+            System.out.print(" What is 5 + 2 = ");
             Scanner input = new Scanner(System.in);
             int bob = input.nextInt();
 
