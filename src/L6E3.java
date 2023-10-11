@@ -26,10 +26,6 @@ public class L6E3 {
                 }
 
 
-
-
-
-
             }
             while (count <=10 && hearts!=0);
 
