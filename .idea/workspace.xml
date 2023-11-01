@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5424dea0-3563-4db3-a0a5-5c5dea4f0538" name="Changes" comment="L6">
-      <change afterPath="$PROJECT_DIR$/src/L7E1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/L7E2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/L7E3.java" afterDir="false" />
+    <list default="true" id="5424dea0-3563-4db3-a0a5-5c5dea4f0538" name="Changes" comment="L7">
+      <change afterPath="$PROJECT_DIR$/src/L8E1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/L8E2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/L8E3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/L6E3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L6E3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +66,9 @@
       <workItem from="1695211395518" duration="6287000" />
       <workItem from="1695815543768" duration="7587000" />
       <workItem from="1696420673862" duration="7903000" />
-      <workItem from="1697025045681" duration="8554000" />
+      <workItem from="1697025045681" duration="8927000" />
+      <workItem from="1697036233523" duration="627000" />
+      <workItem from="1698843815010" duration="2609000" />
     </task>
     <task id="LOCAL-00001" summary="Anagrams again">
       <option name="closed" value="true" />
@@ -125,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696429999716</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="L7">
+      <option name="closed" value="true" />
+      <created>1697035716352</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1697035716352</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,7 +158,8 @@
     <MESSAGE value="L4" />
     <MESSAGE value="L5" />
     <MESSAGE value="L6" />
-    <option name="LAST_COMMIT_MESSAGE" value="L6" />
+    <MESSAGE value="L7" />
+    <option name="LAST_COMMIT_MESSAGE" value="L7" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
