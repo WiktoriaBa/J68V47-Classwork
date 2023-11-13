@@ -61,8 +61,13 @@ public class L9E2 {
     }
 
     public static void exception7() {
-        String exception7 = null;
-        System.out.println(exception7.toUpperCase());
+        try {
+            String exception7 = null;
+            System.out.println(exception7.toUpperCase());
+        }
+        catch (NullPointerException e) {
+            System.out.println(e.toString());
+        }
 
     }
 
@@ -73,5 +78,6 @@ public class L9E2 {
         exception4();
         exception5();
         exception6();
+        exception7();
     }
 }

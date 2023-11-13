@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5424dea0-3563-4db3-a0a5-5c5dea4f0538" name="Changes" comment="L7">
-      <change afterPath="$PROJECT_DIR$/src/L9E2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/L9E3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/L9E2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L9E2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +23,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "WiktoriaBa"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="97aff3db-2ca2-4f20-b940-4949d79f66f7" />
+        <option name="url" value="https://github.com/WiktoriaBa/J68V47-Classwork.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/L6E3.java" root0="FORCE_HIGHLIGHTING" />
@@ -66,7 +82,7 @@
       <workItem from="1697025045681" duration="8927000" />
       <workItem from="1697036233523" duration="627000" />
       <workItem from="1698843815010" duration="2609000" />
-      <workItem from="1699865844223" duration="2442000" />
+      <workItem from="1699865844223" duration="3410000" />
     </task>
     <task id="LOCAL-00001" summary="Anagrams again">
       <option name="closed" value="true" />
@@ -148,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699867978572</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="L7">
+      <option name="closed" value="true" />
+      <created>1699868566732</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1699868566732</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
