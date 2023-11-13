@@ -46,10 +46,7 @@ public class L8E3 {
             step++;
         }
         System.out.println();
-        // Set up the directions array
 
-
-        // Print out each direction
 
     }
 
