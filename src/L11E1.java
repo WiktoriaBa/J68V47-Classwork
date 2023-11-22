@@ -9,9 +9,8 @@ public class L11E1 {
         try (PrintWriter out = new PrintWriter( new FileWriter("output.txt") ) ) {
             for (count = 1; count <= 12; count += 1) {
             out.println(base + " x " + count + " = " + (count * base)); }
-            out.close();
         } catch (IOException e) {
-            System.out.println("Error occurred writing to file: " + e.toString());
+            System.out.println("Error occurred writing to file: " + e);
         }
 
 
