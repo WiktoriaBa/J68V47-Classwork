@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5424dea0-3563-4db3-a0a5-5c5dea4f0538" name="Changes" comment="L12">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/L12E4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/carSales.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/L12E3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L12E3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/L12E2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L12E2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +67,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vikto\IdeaProjects\J68V47-Classwork\src" />
       <recent name="C:\Users\30160329\IdeaProjects\J68V47-Classwork\src" />
     </key>
   </component>
@@ -108,7 +109,7 @@
       <workItem from="1701076203230" duration="72000" />
       <workItem from="1701076288881" duration="4751000" />
       <workItem from="1701262489104" duration="7911000" />
-      <workItem from="1701598800837" duration="1437000" />
+      <workItem from="1701598800837" duration="3152000" />
     </task>
     <task id="LOCAL-00001" summary="Anagrams again">
       <option name="closed" value="true" />
@@ -246,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701268573818</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="L12">
+      <option name="closed" value="true" />
+      <created>1701600439139</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1701600439139</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

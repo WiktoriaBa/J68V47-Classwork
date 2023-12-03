@@ -39,7 +39,7 @@ public class L12E2 {
             }
 
             public static void displayStudent(Student thisStudent){
-            // note the slight change to this procedure
+
             System.out.format("%s (%d) %s %s %n",attendance(thisStudent.present),thisStudent.id, thisStudent.firstName, thisStudent.surname);
         }
         public static void main(String[] args) {
