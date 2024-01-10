@@ -65,130 +65,22 @@ public class GeoTic {
         }
         return loadedAccounts;
     }
-
-    private static void printBoard(char[][] board) {
-        for (int i = 0; i < board.length; i++) {
-            for (int j = 0; j < board[i].length; j++) {
-                System.out.print(" " + (board[i][j] != '\u0000' ? board[i][j] : " ") + " ");
-                if (j < board[i].length - 1) {
-                    System.out.print("|");
-                }
-            }
-            System.out.println();
-            if (i < board.length - 1) {
-                for (int k = 0; k < board[i].length * 4 - 1; k++) {
-                    System.out.print("-");
-                }
-                System.out.println();
+    private static UserAccount getUserAccount(String username, List<UserAccount> userAccounts) {
+        for (UserAccount user : userAccounts) {
+            if (user.username.equals(username)) {
+                return user;
             }
         }
+        return null;
     }
-
-    private static int[] getUserMove(Scanner scanner) {
-        System.out.println("Enter which row you would like to place an 'O' in (1-3): ");
-        int row = scanner.nextInt();
-        System.out.println("Enter which column you would like to place an 'O' in (1-3): ");
-        int col = scanner.nextInt();
-        return new int[]{row, col};
-    }
-
-    private static boolean isValidMove(char[][] board, int[] move) {
-        int row = move[0] - 1;  // Adjusting indices
-        int col = move[1] - 1;  // Adjusting indices
-        return row >= 0 && row < board.length && col >= 0 && col < board[row].length && board[row][col] == '\u0000';
-    }
-
-    private static boolean hasPlayerWon(char[][] board, char player) {
-        // Check rows and columns
-        for (int i = 0; i < board.length; i++) {
-            if ((board[i][0] == player && board[i][1] == player && board[i][2] == player) ||
-                    (board[0][i] == player && board[1][i] == player && board[2][i] == player)) {
-                return true;
-            }
-        }
-
-        // Check diagonals
-        return (board[0][0] == player && board[1][1] == player && board[2][2] == player) ||
-                (board[0][2] == player && board[1][1] == player && board[2][0] == player);
-    }
-
-    private static void makeSystemMove(char[][] board) {
-        Random rand = new Random();
-        int row, col;
-
-        do {
-            row = rand.nextInt(3);
-            col = rand.nextInt(3);
-        } while (board[row][col] != '\u0000');
-
-        board[row][col] = 'X';
-
-        System.out.println("Program placed 'X' at Row " + (row + 1) + " and Column " + (col + 1));
-    }
-
-    private static void playTicTacToe(UserAccount currentUser, Scanner scanner) {
-        System.out.println("Play Tic-Tac-Toe!");
-
-        char[][] board = currentUser.ticTacToeBoard;
-        boolean gameWon = false;
-        int moves = 0;
-
-        while (!gameWon && moves < 9) {
-            printBoard(board);
-
-            int[] move = getUserMove(scanner);
-
-            if (isValidMove(board, move)) {
-                board[move[0] - 1][move[1] - 1] = 'O';
-                moves++;
-
-                printBoard(board);
-
-                System.out.println("You placed 'O' at Row " + move[0] + " and Column " + move[1]);
-
-                if (hasPlayerWon(board, 'O')) {
-                    gameWon = true;
-                    break;
-                }
-
-                break;
-            } else {
-                System.out.println("Invalid move. Try again.");
-            }
-        }
-
-        if (gameWon) {
-            printBoard(board);
-            System.out.println("Congratulations! You won!");
-            currentUser.points++;
-        }
-    }
-
-    private static void playSystemX(UserAccount currentUser, Scanner scanner) {
-        System.out.println("System plays 'X'");
-
-        char[][] board = currentUser.ticTacToeBoard;
-
-        makeSystemMove(board);
-        printBoard(board);
-        if (hasPlayerWon(board, 'X')) {
-            System.out.println("BOOO you lost!");
-        }
-
-        System.out.println("Press Enter for the next question...");
-        scanner.nextLine();
-        scanner.nextLine();
-    }
-
     private static boolean playQuestionGame(UserAccount currentUser, List<UserAccount> userAccounts, Scanner scanner) {
-        System.out.println("Welcome to the Question and Answer Game!");
 
         List<String> questions = loadQuestions();
         Collections.shuffle(questions);
 
         for (String question : questions) {
             if (!currentUser.answeredQuestions.contains(question)) {
-                String questionWithoutCorrect = question.replace(", correct", "");
+                String questionWithoutCorrect = question.replace(", correct ", "");
                 System.out.println(questionWithoutCorrect);
 
                 char correctAnswer = getCorrectAnswer(question, false);
@@ -197,24 +89,23 @@ public class GeoTic {
                 String userAnswer = scanner.next().toUpperCase();
                 if (userAnswer.equals("A") || userAnswer.equals("B") || userAnswer.equals("C") || userAnswer.equals("D")) {
                     if (userAnswer.charAt(0) == correctAnswer) {
-                        System.out.println("Correct!");
+                        System.out.println("Correct! \n");
                         currentUser.answeredQuestions.add(question);
                         saveUserAccounts(userAccounts);
                         playTicTacToe(currentUser, scanner);
                     } else {
-                        System.out.println("Incorrect!" + "\n");
+                        System.out.println("Incorrect! \n");
                         currentUser.answeredQuestions.add(question);
                         saveUserAccounts(userAccounts);
                         playSystemX(currentUser, scanner);
                     }
                 } else {
-                    System.out.println("ERROR: Invalid letter, please put in a valid letter from the answers available.");
+                    System.out.println("ERROR: Invalid letter, please put in a valid letter from the answers available. \n");
                 }
             }
         }
         return true;
     }
-
     private static List<String> loadQuestions() {
         List<String> questions = new ArrayList<>();
 
@@ -254,28 +145,139 @@ public class GeoTic {
         return 'A';
     }
 
-    private static UserAccount getUserAccount(String username, List<UserAccount> userAccounts) {
-        for (UserAccount user : userAccounts) {
-            if (user.username.equals(username)) {
-                return user;
+
+    private static void printBoard(char[][] board) {
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board[i].length; j++) {
+                System.out.print(" " + (board[i][j] != '\u0000' ? board[i][j] : " ") + " ");
+                if (j < board[i].length - 1) {
+                    System.out.print("|");
+                }
+            }
+            System.out.println();
+            if (i < board.length - 1) {
+                for (int k = 0; k < board[i].length * 4 - 1; k++) {
+                    System.out.print("-");
+                }
+                System.out.println();
             }
         }
-        return null;
     }
+
+    private static int[] getUserMove(Scanner scanner) {
+        System.out.print("Enter which row you would like to place an 'O' in (1-3): ");
+        int row = scanner.nextInt();
+        System.out.print("Enter which column you would like to place an 'O' in (1-3): ");
+        int col = scanner.nextInt();
+        System.out.println("\n");
+        return new int[]{row, col};
+    }
+
+    private static boolean isValidMove(char[][] board, int[] move) {
+        int row = move[0] - 1;  // Adjusting indices
+        int col = move[1] - 1;  // Adjusting indices
+        return row >= 0 && row < board.length && col >= 0 && col < board[row].length && board[row][col] == '\u0000';
+    }
+
+    private static boolean hasPlayerWon(char[][] board, char player) {
+        // Check rows and columns
+        for (int i = 0; i < board.length; i++) {
+            if ((board[i][0] == player && board[i][1] == player && board[i][2] == player) ||
+                    (board[0][i] == player && board[1][i] == player && board[2][i] == player)) {
+                return true;
+            }
+        }
+
+        // Check diagonals
+        return (board[0][0] == player && board[1][1] == player && board[2][2] == player) ||
+                (board[0][2] == player && board[1][1] == player && board[2][0] == player);
+    }
+
+    private static void makeSystemMove(char[][] board) {
+        Random rand = new Random();
+        int row, col;
+
+        do {
+            row = rand.nextInt(3);
+            col = rand.nextInt(3);
+        } while (board[row][col] != '\u0000');
+
+        board[row][col] = 'X';
+
+        System.out.println("Program placed 'X' at Row " + (row + 1) + " and Column " + (col + 1));
+    }
+
+    private static void playTicTacToe(UserAccount currentUser, Scanner scanner) {
+        System.out.println("Play Tic-Tac-Toe! \n");
+
+        char[][] board = currentUser.ticTacToeBoard;
+        boolean gameWon = false;
+        int moves = 0;
+
+        while (!gameWon && moves < 9) {
+            printBoard(board);
+
+            int[] move = getUserMove(scanner);
+
+            if (isValidMove(board, move)) {
+                board[move[0] - 1][move[1] - 1] = 'O';
+                moves++;
+
+                printBoard(board);
+
+                System.out.println("\n You placed 'O' at Row " + move[0] + " and Column " + move[1]);
+
+                if (hasPlayerWon(board, 'O')) {
+                    gameWon = true;
+                    break;
+                }
+
+                break;
+            } else {
+                System.out.println("Invalid move. Try again.");
+            }
+        }
+
+        if (gameWon) {
+            printBoard(board);
+            System.out.println("Congratulations! You won!");
+            currentUser.points++;
+        }
+    }
+
+    private static void playSystemX(UserAccount currentUser, Scanner scanner) {
+        System.out.println("System plays 'X' \n");
+
+        char[][] board = currentUser.ticTacToeBoard;
+
+        makeSystemMove(board);
+        printBoard(board);
+        if (hasPlayerWon(board, 'X')) {
+            System.out.println("BOOO you lost!");
+        }
+
+        System.out.print("Press Enter for the next question...");
+        scanner.nextLine();
+        scanner.nextLine();
+    }
+
+
+
+
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         List<UserAccount> userAccounts = loadUserAccounts();
 
-        System.out.println("GeoTic");
-        System.out.println("Hello! Please enter 'A' to login or 'B' to create an account");
+        System.out.println("GeoTic \n");
+        System.out.print("Hello! Please enter 'A' to login or 'B' to create an account: ");
 
         String option = scanner.nextLine();
 
         UserAccount currentUser = null;
 
         if (option.equalsIgnoreCase("B")) {
-            System.out.println("Create An Account:");
+            System.out.println("\nCreate An Account: ");
 
             String newUsername;
             do {
@@ -288,13 +290,13 @@ public class GeoTic {
 
             System.out.print("Password: ");
             String newPassword = scanner.nextLine();
-            System.out.println("Press Enter to create an account");
+            System.out.print("\nPress Enter to create an account");
             scanner.nextLine();
 
             UserAccount newUser = new UserAccount(newUsername, newPassword);
             userAccounts.add(newUser);
             saveUserAccounts(userAccounts);
-            System.out.println("Account created successfully!");
+            System.out.println("Account created successfully!\n");
             currentUser = newUser;
         } else if (option.equalsIgnoreCase("A")) {
             System.out.println("Login:");
@@ -318,7 +320,7 @@ public class GeoTic {
         }
 
         while (currentUser != null && currentUser.points < 3) {
-            System.out.println("Welcome to GeoTic!!");
+            System.out.println("Welcome to GeoTic!!\n");
             playQuestionGame(currentUser, userAccounts, scanner);
 
             if (hasPlayerWon(currentUser.ticTacToeBoard, 'O')) {

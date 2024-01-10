@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5424dea0-3563-4db3-a0a5-5c5dea4f0538" name="Changes" comment="L12">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GeoTic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GeoTic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/userAccounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/userAccounts.txt" afterDir="false" />
@@ -117,7 +116,7 @@
       <workItem from="1702262952083" duration="2160000" />
       <workItem from="1702406996958" duration="4170000" />
       <workItem from="1704828011395" duration="17172000" />
-      <workItem from="1704893031490" duration="1172000" />
+      <workItem from="1704893031490" duration="2418000" />
     </task>
     <task id="LOCAL-00001" summary="Anagrams again">
       <option name="closed" value="true" />
@@ -271,7 +270,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701602154592</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="L12">
+      <option name="closed" value="true" />
+      <created>1704894313672</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1704894313672</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
