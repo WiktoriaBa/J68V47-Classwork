@@ -80,11 +80,11 @@ public class GeoTic {
 
         for (String question : questions) {
             if (!currentUser.answeredQuestions.contains(question)) {
-                String questionWithoutCorrect = question.replace(", correct ", "");
+                String questionWithoutCorrect = question.replace(", correct", "");
                 System.out.println(questionWithoutCorrect);
 
                 char correctAnswer = getCorrectAnswer(question, false);
-                System.out.println("Please type which letter has the correct answer:");
+                System.out.print("Please type which letter has the correct answer: ");
 
                 String userAnswer = scanner.next().toUpperCase();
                 if (userAnswer.equals("A") || userAnswer.equals("B") || userAnswer.equals("C") || userAnswer.equals("D")) {
@@ -225,7 +225,7 @@ public class GeoTic {
 
                 printBoard(board);
 
-                System.out.println("\n You placed 'O' at Row " + move[0] + " and Column " + move[1]);
+                System.out.println("\nYou placed 'O' at Row " + move[0] + " and Column " + move[1] + "\n");
 
                 if (hasPlayerWon(board, 'O')) {
                     gameWon = true;
@@ -239,8 +239,7 @@ public class GeoTic {
         }
 
         if (gameWon) {
-            printBoard(board);
-            System.out.println("Congratulations! You won!");
+            System.out.println("\nCongratulations! You won!\n");
             currentUser.points++;
         }
     }
@@ -253,10 +252,10 @@ public class GeoTic {
         makeSystemMove(board);
         printBoard(board);
         if (hasPlayerWon(board, 'X')) {
-            System.out.println("BOOO you lost!");
+            System.out.println("\nBOOO you lost!\n");
         }
 
-        System.out.print("Press Enter for the next question...");
+        System.out.print("\nPress Enter to continue\n");
         scanner.nextLine();
         scanner.nextLine();
     }
@@ -299,18 +298,18 @@ public class GeoTic {
             System.out.println("Account created successfully!\n");
             currentUser = newUser;
         } else if (option.equalsIgnoreCase("A")) {
-            System.out.println("Login:");
+            System.out.println("\nLogin");
             System.out.print("Username: ");
             String enteredUsername = scanner.nextLine();
             System.out.print("Password: ");
             String enteredPassword = scanner.nextLine();
-            System.out.println("Press Enter to continue");
+            System.out.print("\nPress Enter to continue");
             scanner.nextLine();
 
             boolean isValid = isValidLogin(enteredUsername, enteredPassword, userAccounts);
 
             if (isValid) {
-                System.out.println("Login successful. Welcome, " + enteredUsername + "!");
+                System.out.println("Login successful. Welcome, " + enteredUsername + "!\n");
                 currentUser = getUserAccount(enteredUsername, userAccounts);
             } else {
                 System.out.println("Error: Invalid information. Please try again.");
