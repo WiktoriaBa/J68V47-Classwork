@@ -1,0 +1,359 @@
+Question: Which country is known as the "Land of the Rising Sun"?
+A) China
+B) Japan, correct
+C) South Korea
+D) Vietnam
+
+Question: In which country can you find the ancient city of Petra?
+A) Jordan, correct
+B) Egypt
+C) Greece
+D) Turkey
+
+Question: What is the largest country in South America by land area?
+A) Argentina
+B) Brazil, correct
+C) Peru
+D) Chile
+
+Question: Which country is famous for its tulip fields and windmills?
+A) Netherlands, correct
+B) Belgium
+C) Switzerland
+D) Denmark
+
+Question: In which country would you find the Acropolis?
+A) Italy
+B) Greece, correct
+C) Turkey
+D) Spain
+
+Question: Which country is home to the Great Barrier Reef?
+A) Australia, correct
+B) Maldives
+C) Mexico
+D) Philippines
+
+Question: What is the capital city of Canada?
+A) Toronto
+B) Vancouver
+C) Ottawa, correct
+D) Montreal
+
+Question: Which African country is known as the "Pearl of Africa"?
+A) Kenya
+B) Nigeria
+C) Uganda, correct
+D) South Africa
+
+Question: Which country is famous for its fjords?
+A) Sweden
+B) Norway, correct
+C) Iceland
+D) Finland
+
+Question: In which country is the ancient city of Machu Picchu located?
+A) Brazil
+B) Peru, correct
+C) Colombia
+D) Venezuela
+
+Question: What is the official language of Brazil?
+A) Spanish
+B) Portuguese, correct
+C) Italian
+D) French
+
+Question: Which Asian country is known as the "Land of Smiles"?
+A) Japan
+B) Thailand, correct
+C) Vietnam
+D) Cambodia
+
+Question: What is the capital city of New Zealand?
+A) Sydney
+B) Wellington, correct
+C) Auckland
+D) Canberra
+
+Question: In which country can you find the ancient city of Rome?
+A) Greece
+B) Italy, correct
+C) Spain
+D) Turkey
+
+Question: Which country is famous for its wildlife and the "Big Five"?
+A) Kenya, correct
+B) India
+C) Brazil
+D) Australia
+
+Question: What is the national sport of Canada?
+A) Ice Hockey, correct
+B) Lacrosse
+C) Curling
+D) Baseball
+
+Question: In which country is Mount Everest located?
+A) China
+B) Nepal, correct
+C) India
+D) Bhutan
+
+Question: Which European country is known for its beautiful beaches along the Costa del Sol?
+A) Italy
+B) Greece
+C) Spain, correct
+D) Portugal
+
+Question: What is the official language of Egypt?
+A) Arabic, correct
+B) Persian
+C) Turkish
+D) Hebrew
+
+Question: In which country would you find the ancient city of Kyoto?
+A) China
+B) Japan, correct
+C) South Korea
+D) Thailand
+
+Question: Which country is famous for its colourful and historic castles, including Edinburgh Castle?
+A) Ireland
+B) England
+C) Scotland, correct
+D) Wales
+
+Question: What is the capital city of Argentina?
+A) Rio de Janeiro
+B) Buenos Aires, correct
+C) Santiago
+D) Bogotá
+
+Question: In which country is the ancient city of Ephesus located?
+A) Greece
+B) Italy
+C) Turkey, correct
+D) Egypt
+
+Question: Which country is known as the "Land of a Thousand Lakes"?
+A) Sweden
+B) Finland, correct
+C) Norway
+D) Denmark
+
+Question: What is the official language of Iran?
+A) Turkish
+B) Arabic
+C) Farsi (Persian), correct
+D) Urdu
+
+Question: In which country can you find the famous Angkor Wat temple complex?
+A) Thailand
+B) Cambodia, correct
+C) Vietnam
+D) Laos
+
+Question: Which South American country is home to the Amazon Rainforest?
+A) Colombia
+B) Brazil, correct
+C) Peru
+D) Venezuela
+
+Question: What is the capital city of South Korea?
+A) Beijing
+B) Seoul, correct
+C) Tokyo
+D) Bangkok
+
+Question: In which country is the historic city of Istanbul located?
+A) Greece
+B) Italy
+C) Turkey, correct
+D) Egypt
+
+Question: Which African country is known for its vibrant Maasai culture and wildlife in the Maasai Mara?
+A) Tanzania
+B) Kenya, correct
+C) South Africa
+D) Nigeria
+
+Question: What is the official language of Mexico?
+A) Spanish, correct
+B) Portuguese
+C) French
+D) Italian
+
+Question: In which country can you find the ancient city of Babylon?
+A) Iran
+B) Iraq, correct
+C) Syria
+D) Jordan
+
+Question: Which European country is famous for its beautiful fjords and midnight sun?
+A) Iceland
+B) Norway, correct
+C) Sweden
+D) Denmark
+
+Question: What is the national symbol of Australia?
+A) Kiwi
+B) Kangaroo, correct
+C) Koala
+D) Emu
+
+Question: In which country is the famous city of Marrakech located?
+A) Egypt
+B) Morocco, correct
+C) Algeria
+D) Tunisia
+
+Question: Which Asian country is known as the "Land of the Thunder Dragon"?
+A) Bhutan, correct
+B) Nepal
+C) Tibet
+D) Myanmar
+
+Question: What is the capital city of France?
+A) Berlin
+B) Madrid
+C) Paris, correct
+D) Rome
+
+Question: In which country is the ancient city of Carthage located?
+A) Greece
+B) Italy
+C) Tunisia, correct
+D) Turkey
+
+Question: Which Central American country is known for its ancient Mayan ruins, including Tikal?
+A) Mexico
+B) Belize
+C) Guatemala, correct
+D) Honduras
+
+Question: What is the official language of Switzerland?
+A) German
+B) French
+C) Italian
+D) Romansh, correct
+
+Question: In which country would you find the famous temple complex of Bagan?
+A) Myanmar, correct
+B) Thailand
+C) Cambodia
+D) Laos
+
+Question: Which country is famous for its stunning fjords and Northern Lights?
+A) Finland
+B) Norway, correct
+C) Iceland
+D) Sweden
+
+Question: What is the national sport of Japan?
+A) Sumo Wrestling, correct
+B) Judo
+C) Karate
+D) Kendo
+
+Question: In which country is the ancient city of Athens located?
+A) Italy
+B) Greece, correct
+C) Turkey
+D) Spain
+
+Question: Which African country is known for its diverse wildlife in the Serengeti National Park?
+A) Kenya
+B) Tanzania, correct
+C) South Africa
+D) Namibia
+
+Question: What is the official language of Canada?
+A) English, correct
+B) French
+C) Spanish
+D) Italian
+
+Question: In which country would you find the famous city of Venice?
+A) Greece
+B) Italy, correct
+C) Spain
+D) Turkey
+
+Question: Which country is famous for its iconic red pagodas and temples?
+A) Vietnam
+B) Japan
+C) China, correct
+D) South Korea
+
+Question: What is the capital city of Russia?
+A) Moscow, correct
+B) St. Petersburg
+C) Kiev
+D) Warsaw
+
+Question: In which country can you find the ancient city of Pompeii?
+A) Greece
+B) Italy, correct
+C) Spain
+D) Turkey
+
+Question: Which European country is known for its beautiful castles, including Neuschwanstein Castle?
+A) Germany, correct
+B) France
+C) Austria
+D) Switzerland
+
+Question: What is the official language of South Africa?
+A) Zulu
+B) Xhosa
+C) Afrikaans
+D) English, correct
+
+Question: In which country would you find the famous city of Kyoto?
+A) China
+B) Japan, correct
+C) South Korea
+D) Thailand
+
+Question: Which country is famous for its vibrant Carnival celebration in Rio de Janeiro?
+A) Argentina
+B) Brazil, correct
+C) Colombia
+D) Venezuela
+
+Question: What is the national symbol of India?
+A) Elephant
+B) Lion
+C) Tiger, correct
+D) Peacock
+
+Question: Which Asian country is known as the "Land of the Golden Pagodas"?
+A) Myanmar, correct
+B) Thailand
+C) Cambodia
+D) Laos
+
+Question: What is the official language of Australia?
+A) English, correct
+B) Australian
+C) Aboriginal
+D) Mandarin
+
+Question: In which country is the famous city of Barcelona located?
+A) Greece
+B) Italy
+C) Spain, correct
+D) Turkey
+
+Question: In which European country can you find the historic city of Prague?
+A) Austria
+B) Czech Republic, correct
+C) Hungary
+D) Poland
+
+Question: Which South American country is home to the famous Machu Picchu ruins?
+A) Brazil
+B) Argentina
+C) Peru, correct
+D) Chile

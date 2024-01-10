@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5424dea0-3563-4db3-a0a5-5c5dea4f0538" name="Changes" comment="L12">
-      <change afterPath="$PROJECT_DIR$/src/L12E4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/carSales.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GeoTic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Questions.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/userAccounts.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/L12E2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L12E2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,30 +41,34 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/L6E3.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/TicTacToe.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2UhsFU6GSlopvXKpx88PLRfSTLd" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/30160329/IdeaProjects/J68V47/src/Main.java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "onboarding.tips.debug.path": "C:/Users/30160329/IdeaProjects/J68V47/src/Main.java",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\vikto\IdeaProjects\J68V47-Classwork\src" />
@@ -109,7 +113,10 @@
       <workItem from="1701076203230" duration="72000" />
       <workItem from="1701076288881" duration="4751000" />
       <workItem from="1701262489104" duration="7911000" />
-      <workItem from="1701598800837" duration="3152000" />
+      <workItem from="1701598800837" duration="3335000" />
+      <workItem from="1702262952083" duration="2160000" />
+      <workItem from="1702406996958" duration="4170000" />
+      <workItem from="1704828011395" duration="17172000" />
     </task>
     <task id="LOCAL-00001" summary="Anagrams again">
       <option name="closed" value="true" />
@@ -255,7 +262,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701600439139</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="L12">
+      <option name="closed" value="true" />
+      <created>1701602154592</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1701602154592</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,6 +288,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Anagrams again" />
     <MESSAGE value="Name and hobby story thingy" />
     <MESSAGE value="If thingys" />
