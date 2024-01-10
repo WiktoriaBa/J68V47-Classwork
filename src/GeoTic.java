@@ -85,9 +85,9 @@ public class GeoTic {
     }
 
     private static int[] getUserMove(Scanner scanner) {
-        System.out.println("Enter row (1-3): ");
+        System.out.println("Enter which row you would like to place an 'O' in (1-3): ");
         int row = scanner.nextInt();
-        System.out.println("Enter column (1-3): ");
+        System.out.println("Enter which column you would like to place an 'O' in (1-3): ");
         int col = scanner.nextInt();
         return new int[]{row, col};
     }
@@ -123,7 +123,7 @@ public class GeoTic {
 
         board[row][col] = 'X';
 
-        System.out.println("System placed 'X' at Row " + (row + 1) + " and Column " + (col + 1));
+        System.out.println("Program placed 'X' at Row " + (row + 1) + " and Column " + (col + 1));
     }
 
     private static void playTicTacToe(UserAccount currentUser, Scanner scanner) {
@@ -141,6 +141,8 @@ public class GeoTic {
             if (isValidMove(board, move)) {
                 board[move[0] - 1][move[1] - 1] = 'O';
                 moves++;
+
+                printBoard(board);
 
                 System.out.println("You placed 'O' at Row " + move[0] + " and Column " + move[1]);
 
@@ -163,13 +165,12 @@ public class GeoTic {
     }
 
     private static void playSystemX(UserAccount currentUser, Scanner scanner) {
-        System.out.println("Play System X!");
+        System.out.println("System plays 'X'");
 
         char[][] board = currentUser.ticTacToeBoard;
 
         makeSystemMove(board);
         printBoard(board);
-
         if (hasPlayerWon(board, 'X')) {
             System.out.println("BOOO you lost!");
         }
@@ -201,7 +202,7 @@ public class GeoTic {
                         saveUserAccounts(userAccounts);
                         playTicTacToe(currentUser, scanner);
                     } else {
-                        System.out.println("Incorrect!");
+                        System.out.println("Incorrect!" + "\n");
                         currentUser.answeredQuestions.add(question);
                         saveUserAccounts(userAccounts);
                         playSystemX(currentUser, scanner);
