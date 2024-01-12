@@ -20,14 +20,29 @@ public class GeoTic {
         }
     }
 
-    private static boolean isValidLogin(String enteredUsername, String enteredPassword, List<UserAccount> userAccounts) {
-        for (UserAccount user : userAccounts) {
-            if (enteredUsername.trim().equals(user.username) && enteredPassword.trim().equals(user.password)) {
-                return true;
+    private static UserAccount isValidLogin(String enteredUsername, String enteredPassword, List<UserAccount> userAccounts, Scanner scanner) {
+        UserAccount currentUser = null;
+
+        while (currentUser == null) {
+            for (UserAccount user : userAccounts) {
+                if (enteredUsername.trim().equals(user.username) && enteredPassword.trim().equals(user.password)) {
+                    currentUser = user;
+                    break;
+                }
+            }
+
+            if (currentUser == null) {
+                System.out.println("Error: Invalid information. Please try again.");
+                System.out.print("Username: ");
+                enteredUsername = scanner.nextLine();
+                System.out.print("Password: ");
+                enteredPassword = scanner.nextLine();
             }
         }
-        return false;
+
+        return currentUser;
     }
+
 
     private static boolean isUsernameTaken(String username, List<UserAccount> userAccounts) {
         for (UserAccount user : userAccounts) {
@@ -239,8 +254,11 @@ public class GeoTic {
         }
 
         if (gameWon) {
-            System.out.println("\nCongratulations! You won!\n");
+            System.out.println("\nCongratulations! You won!");
             currentUser.points++;
+            System.out.println("1 point gained.\n");
+            currentUser.ticTacToeBoard = new char[3][3];
+            currentUser.answeredQuestions.clear();
         }
     }
 
@@ -253,6 +271,8 @@ public class GeoTic {
         printBoard(board);
         if (hasPlayerWon(board, 'X')) {
             System.out.println("\nBOOO you lost!\n");
+            currentUser.ticTacToeBoard = new char[3][3];
+            currentUser.answeredQuestions.clear();
         }
 
         System.out.print("\nPress Enter to continue\n");
@@ -298,35 +318,34 @@ public class GeoTic {
             System.out.println("Account created successfully!\n");
             currentUser = newUser;
         } else if (option.equalsIgnoreCase("A")) {
-            System.out.println("\nLogin");
-            System.out.print("Username: ");
-            String enteredUsername = scanner.nextLine();
-            System.out.print("Password: ");
-            String enteredPassword = scanner.nextLine();
-            System.out.print("\nPress Enter to continue");
-            scanner.nextLine();
+            boolean isValid = false;
 
-            boolean isValid = isValidLogin(enteredUsername, enteredPassword, userAccounts);
+            while (!isValid) {
+                System.out.println("\nLogin");
+                System.out.print("Username: ");
+                String enteredUsername = scanner.nextLine();
+                System.out.print("Password: ");
+                String enteredPassword = scanner.nextLine();
 
-            if (isValid) {
-                System.out.println("Login successful. Welcome, " + enteredUsername + "!\n");
-                currentUser = getUserAccount(enteredUsername, userAccounts);
-            } else {
-                System.out.println("Error: Invalid information. Please try again.");
+                currentUser = isValidLogin(enteredUsername, enteredPassword, userAccounts, scanner);
+                isValid = currentUser != null;
+
+                if (isValid) {
+                    System.out.println("Login successful. Welcome, " + enteredUsername + "!\n");
+                } else {
+                    System.out.println("Error: Invalid information. Please try again.");
+                }
             }
         } else {
             System.out.println("ERROR: invalid option");
         }
 
-        while (currentUser != null && currentUser.points < 3) {
+        while (currentUser != null && currentUser.points <= 3) {
             System.out.println("Welcome to GeoTic!!\n");
             playQuestionGame(currentUser, userAccounts, scanner);
 
             if (hasPlayerWon(currentUser.ticTacToeBoard, 'O')) {
                 currentUser.points++;
-                System.out.println("1 point gained.");
-            } else {
-                System.out.println("BOOO you lost!");
             }
 
             saveUserAccounts(userAccounts);
@@ -335,7 +354,7 @@ public class GeoTic {
         if (currentUser != null) {
             System.out.println("WOOO you have reached 3 points!!");
             System.out.println("Congratulations, you have completed the game!");
-            System.out.println("Press Enter to restart the game.");
+            System.out.print("Press Enter to restart the game.");
 
             currentUser.points = 0;
             currentUser.ticTacToeBoard = new char[3][3];

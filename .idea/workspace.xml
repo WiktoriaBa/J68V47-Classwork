@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5424dea0-3563-4db3-a0a5-5c5dea4f0538" name="Changes" comment="L12">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GeoTic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GeoTic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userAccounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/userAccounts.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +118,7 @@
       <workItem from="1702406996958" duration="4170000" />
       <workItem from="1704828011395" duration="17172000" />
       <workItem from="1704893031490" duration="4038000" />
+      <workItem from="1705016953555" duration="7346000" />
     </task>
     <task id="LOCAL-00001" summary="Anagrams again">
       <option name="closed" value="true" />
