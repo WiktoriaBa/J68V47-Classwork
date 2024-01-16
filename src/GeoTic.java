@@ -12,7 +12,7 @@ public class GeoTic {
         Set<String> answeredQuestions;
 
         // Constructor for creating a new user account
-        public UserAccount(String username, String password) {
+        private UserAccount(String username, String password) {
             // Initialize username and password
             this.username = username;
             this.password = password;
@@ -30,7 +30,7 @@ public class GeoTic {
 
 
     // Validates user login credentials
-    private static UserAccount isValidLogin(String enteredUsername, String enteredPassword, List<UserAccount> userAccounts, Scanner scanner) {
+    private static UserAccount isLoginValid(String enteredUsername, String enteredPassword, List<UserAccount> userAccounts, Scanner scanner) {
         UserAccount currentUser = null;
 
         // Loop until valid credentials are entered
@@ -320,7 +320,6 @@ public class GeoTic {
 
             if (isValidMove(board, move)) {
                 board[move[0] - 1][move[1] - 1] = 'O';
-                moves++;
 
                 printBoard(board);
 
@@ -332,7 +331,6 @@ public class GeoTic {
                     currentUser.points++;
                     System.out.println("1 point gained. Total points: " + currentUser.points + "\n");
                     currentUser.ticTacToeBoard = new char[3][3];
-                    currentUser.answeredQuestions.clear();
                     saveUserAccounts(userAccounts); // Save immediately after winning Tic-Tac-Toe
                     break;
                 }
@@ -366,7 +364,6 @@ public class GeoTic {
 
             // Reset the current user's Tic-Tac-Toe board and clear answered questions
             currentUser.ticTacToeBoard = new char[3][3];
-            currentUser.answeredQuestions.clear();
         }
 
         System.out.print("\nPress Enter to continue\n");
@@ -453,7 +450,7 @@ public class GeoTic {
                     String enteredPassword = scanner.nextLine();
 
                     // Validate the entered credentials and get the user account
-                    currentUser = isValidLogin(enteredUsername, enteredPassword, userAccounts, scanner);
+                    currentUser = isLoginValid(enteredUsername, enteredPassword, userAccounts, scanner);
 
                     // Check if the login was successful
                     isValid = currentUser != null;
