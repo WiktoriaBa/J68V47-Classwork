@@ -71,7 +71,7 @@ public class GeoTic {
 
     // Saves user account information to a file
     private static void saveUserAccounts(List<UserAccount> userAccounts) {
-        try (PrintWriter writer = new PrintWriter(new FileWriter("src/userAccounts.txt"))) {
+        try (PrintWriter writer = new PrintWriter(new FileWriter("src/Project/userAccounts.txt"))) {
             for (UserAccount user : userAccounts) {
                 // Save basic user information
                 writer.print(user.username + "," + user.password + "," + user.points);
@@ -99,7 +99,7 @@ public class GeoTic {
     // Loads user accounts from a file
     private static List<UserAccount> loadUserAccounts() {
         List<UserAccount> loadedAccounts = new ArrayList<>();
-        try (Scanner scanner = new Scanner(new File("src/userAccounts.txt"))) {
+        try (Scanner scanner = new Scanner(new File("src/Project/userAccounts.txt"))) {
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
                 String[] parts = line.split(",");
@@ -151,9 +151,9 @@ public class GeoTic {
                 char correctAnswer = getCorrectAnswer(question, false);
                 System.out.print("Please type which letter has the correct answer: ");
 
-                String userAnswer = scanner.next();
+                String userAnswer = scanner.next().toUpperCase(); // Convert the user's answer to uppercase
                 if (userAnswer.matches("[A-D]")) {
-                    if (userAnswer.charAt(0) == correctAnswer) {
+                    if (userAnswer.charAt(0) == Character.toUpperCase(correctAnswer)) {
                         System.out.println("Correct! \n");
                         currentUser.answeredQuestions.add(question);
                         saveUserAccounts(userAccounts);
@@ -178,6 +178,7 @@ public class GeoTic {
                 } else {
                     System.out.println("ERROR: Invalid letter, please put in a valid letter from the answers available. \n");
                 }
+
             }
         }
     }
@@ -187,7 +188,7 @@ public class GeoTic {
         // Create a list to store loaded questions
         List<String> questions = new ArrayList<>();
 
-        try (BufferedReader br = new BufferedReader(new FileReader("src/Questions.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("src/Project/Questions.txt"))) {
             // StringBuilder to collect lines and construct a complete question
             StringBuilder currentQuestion = new StringBuilder();
 
@@ -227,13 +228,20 @@ public class GeoTic {
 
     // Retrieves the correct answer from a formatted question
     private static char getCorrectAnswer(String question, boolean isUser) {
+        // Split the question into lines to process each line separately
         String[] lines = question.split("\n");
+
+        // Look through each line in the question
         for (String line : lines) {
+            // Check if the line contains information about the correct answer
             if (line.contains("correct")) {
+                // Return either the correct answer or a placeholder for the user's answer based on the 'isUser' flag
                 return isUser ? ' ' : line.charAt(0);
             }
         }
-        return 'A';
+
+        // If no information about the correct answer is found, return a default value
+        return 'F';
     }
 
     // Prints the Tic-Tac-Toe board
@@ -472,7 +480,7 @@ public class GeoTic {
         } while (!option.equalsIgnoreCase("A") && !option.equalsIgnoreCase("B"));
 
 
-        System.out.println("Welcome to Project.GeoTic!!\n");
+        System.out.println("Welcome to GeoTic!!\n");
 
         // Main game loop: Play question game until the user reaches 3 points
         while (currentUser != null && currentUser.points < 3) {
