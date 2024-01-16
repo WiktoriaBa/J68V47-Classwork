@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5424dea0-3563-4db3-a0a5-5c5dea4f0538" name="Changes" comment="project!">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GeoTic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GeoTic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Questions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Questions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userAccounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/userAccounts.txt" afterDir="false" />
+    <list default="true" id="5424dea0-3563-4db3-a0a5-5c5dea4f0538" name="Changes" comment="Project">
+      <change beforePath="$PROJECT_DIR$/src/GeoTic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Project/GeoTic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +68,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vikto\IdeaProjects\J68V47-Classwork\src\Project" />
       <recent name="C:\Users\vikto\IdeaProjects\J68V47-Classwork\src" />
       <recent name="C:\Users\30160329\IdeaProjects\J68V47-Classwork\src" />
     </key>
@@ -119,7 +117,7 @@
       <workItem from="1704828011395" duration="17172000" />
       <workItem from="1704893031490" duration="4038000" />
       <workItem from="1705016953555" duration="7659000" />
-      <workItem from="1705414237779" duration="15481000" />
+      <workItem from="1705414237779" duration="15877000" />
     </task>
     <task id="LOCAL-00001" summary="Anagrams again">
       <option name="closed" value="true" />
@@ -305,7 +303,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705424689363</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Project">
+      <option name="closed" value="true" />
+      <created>1705431556875</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1705431556875</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +340,8 @@
     <MESSAGE value="L11" />
     <MESSAGE value="L12" />
     <MESSAGE value="project!" />
-    <option name="LAST_COMMIT_MESSAGE" value="project!" />
+    <MESSAGE value="Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,3 +1,4 @@
+package Project;
 import java.io.*;
 import java.util.*;
 
@@ -382,7 +383,7 @@ public class GeoTic {
     }
 
 
-    // Main method for executing the GeoTic program
+    // Main method for executing the Project.GeoTic program
     public static void main(String[] args) {
         // Create a new Scanner to take input from the user
         Scanner scanner = new Scanner(System.in);
@@ -391,7 +392,7 @@ public class GeoTic {
         List<UserAccount> userAccounts = loadUserAccounts();
         UserAccount currentUser = null;
 
-        System.out.println("GeoTic \n");
+        System.out.println("GeoTic! \n");
 
         // Option to either login or create an account
         String option;
@@ -471,7 +472,7 @@ public class GeoTic {
         } while (!option.equalsIgnoreCase("A") && !option.equalsIgnoreCase("B"));
 
 
-        System.out.println("Welcome to GeoTic!!\n");
+        System.out.println("Welcome to Project.GeoTic!!\n");
 
         // Main game loop: Play question game until the user reaches 3 points
         while (currentUser != null && currentUser.points < 3) {
