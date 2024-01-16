@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5424dea0-3563-4db3-a0a5-5c5dea4f0538" name="Changes" comment="L12">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5424dea0-3563-4db3-a0a5-5c5dea4f0538" name="Changes" comment="project!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GeoTic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GeoTic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/userAccounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/userAccounts.txt" afterDir="false" />
@@ -118,7 +117,8 @@
       <workItem from="1702406996958" duration="4170000" />
       <workItem from="1704828011395" duration="17172000" />
       <workItem from="1704893031490" duration="4038000" />
-      <workItem from="1705016953555" duration="7346000" />
+      <workItem from="1705016953555" duration="7659000" />
+      <workItem from="1705414237779" duration="9831000" />
     </task>
     <task id="LOCAL-00001" summary="Anagrams again">
       <option name="closed" value="true" />
@@ -288,7 +288,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704895525195</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="project!">
+      <option name="closed" value="true" />
+      <created>1705024650697</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1705024650697</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +324,8 @@
     <MESSAGE value="L7" />
     <MESSAGE value="L11" />
     <MESSAGE value="L12" />
-    <option name="LAST_COMMIT_MESSAGE" value="L12" />
+    <MESSAGE value="project!" />
+    <option name="LAST_COMMIT_MESSAGE" value="project!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
