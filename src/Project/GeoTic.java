@@ -207,7 +207,7 @@ public class GeoTic {
                     // add the current line to the StringBuilder
                     currentQuestion.append(line).append("\n");
                 } else {
-                    // If the line doesn't start with "Question: ", add it to the current question
+                    // If the line doesn't start with "Question: ", add it to the current question (this is for the answers)
                     currentQuestion.append(line).append("\n");
                 }
             }
@@ -235,13 +235,13 @@ public class GeoTic {
         for (String line : lines) {
             // Check if the line contains information about the correct answer
             if (line.contains("correct")) {
-                // Return either the correct answer or a placeholder for the user's answer based on the 'isUser' flag
+                // Return either the correct answer or a placeholder for the user's answer based on the 'isUser'
                 return isUser ? ' ' : line.charAt(0);
             }
         }
 
         // If no information about the correct answer is found, return a default value
-        return 'F';
+        return 'A';
     }
 
     // Prints the Tic-Tac-Toe board
